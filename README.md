@@ -27,3 +27,16 @@ VALUES ('USD', 'EUR', 'United States', 'Eurozone', 0.85);
 
 INSERT INTO currency_exchange_rate (quote_currency, base_currency, quote_country, base_country, exchange_rate)
 VALUES ('GBP', 'EUR', 'United Kingdom', 'Eurozone', 1.15);
+```
+
+## Update Card Amount
+
+Endpoint  POST: http://localhost:8080/api/v1/card/update-card-amount
+```request
+{
+    "cardNumber":1234567890123456,
+    "amount":23.4,
+    "quoteCurrency":"GBP",
+    "baseCurrency":"EUR"
+}
+```
