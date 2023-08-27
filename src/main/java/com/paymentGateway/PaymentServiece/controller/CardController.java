@@ -40,8 +40,11 @@ public class CardController {
         );
         
         if (card != null && exchangeRate != null) {
+            // Get Converted Amount
+            Double convertedAmount = request.getAmount() * exchangeRate.getExchangeRate();
+            
             // Calculate updated amount
-            Double updatedAmount = card.getAmount() * exchangeRate.getExchangeRate();
+            Double updatedAmount = card.getAmount() + convertedAmount;
             
             // Update card amount
             card.setAmount(updatedAmount);
