@@ -3,7 +3,7 @@
 This is a guide for setting up and testing the Payment Service using H2 database and the provided endpoints.
 
 ## Setting Up H2 Console
-
+EndPoint http://localhost:8080/h2-console
 1. Open the H2 Console using the following credentials:
    - JDBC URL: `jdbc:h2:mem:testdb`
    - User Name: `utkarsh`
